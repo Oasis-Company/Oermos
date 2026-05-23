@@ -1,2 +1,2 @@
 export { OasisBioClient } from './oasisbio';
-export { OasisBioApiError, OasisBioNetworkError } from './errors';
+export { OasisBioApiError, OasisBioNetworkError, WebhookVerificationError, WebhookProcessingError } from './errors';

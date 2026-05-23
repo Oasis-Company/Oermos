@@ -1,0 +1,29 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .logo-symbol {
+            stroke: #000;
+            stroke-width: 3;
+            fill: none;
+            stroke-linecap: round;
+        }
+        .logo-dot {
+            fill: #000;
+        }
+        .logo-text {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            fill: #000;
+            letter-spacing: -0.5px;
+        }
+    </style>
+
+    <!-- 波形线条 ~ -->
+    <path d="M 15 40 Q 22.5 25 30 40 Q 37.5 55 45 40 Q 52.5 25 60 40" class="logo-symbol" />
+
+    <!-- 中心实心圆 -->
+    <circle cx="42.5" cy="40" r="6" class="logo-dot" />
+
+    <!-- 文字 OERMOS -->
+    <text x="72" y="50" class="logo-text">OERMOS</text>
+</svg>

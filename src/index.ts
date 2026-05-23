@@ -11,10 +11,26 @@ export * from './types';
 export { oasisBioConfig, validateConfig, getEnv } from './config';
 
 // Export client
-export { OasisBioClient, OasisBioApiError, OasisBioNetworkError } from './client';
+export {
+  OasisBioClient,
+  OasisBioApiError,
+  OasisBioNetworkError,
+  WebhookVerificationError,
+  WebhookProcessingError,
+} from './client';
 
 // Export services
-export { IdentityService } from './services';
+export { IdentityService, WebhookHandler, type WebhookEventHandler } from './services';
 
 // Export utilities
 export { TTLCache, type CacheOptions } from './utils/cache';
+export { verifyWebhookSignature, type VerifyWebhookOptions } from './utils/verify-webhook';
+
+// Export webhook endpoint
+export {
+  createWebhookEndpoint,
+  createWebhookProcessor,
+  type WebhookEndpointOptions,
+  type ExpressRequest,
+  type ExpressResponse,
+} from './webhook';

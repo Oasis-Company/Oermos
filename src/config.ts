@@ -2,6 +2,7 @@ import 'dotenv/config';
 
 const requiredVars = {
   OASIS_BIO_API_URL: process.env.OASIS_BIO_API_URL,
+  OASISBIO_WEBHOOK_SECRET: process.env.OASISBIO_WEBHOOK_SECRET,
 } as const;
 
 type RequiredKey = keyof typeof requiredVars;
